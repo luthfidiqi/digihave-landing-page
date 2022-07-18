@@ -10,7 +10,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  height: 100vh;
+  height: 125vh;
 }
 
 .navbar {
@@ -24,27 +24,39 @@ header {
 
 .banner {
   width: 100%;
-  height: 75%;
+  height: 65%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .banner-text {
+  width: 50%;
   margin-right: 75px;
   color: white;
 }
 
 .banner-text h1 {
-  font-size: 58px;
+  font-size: 50px;
   font-weight: 800;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .banner-text p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+.banner-img {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+}
+
+.banner-img img {
+  width: 85%;
 }
 
 .btn-digi-white {
@@ -100,7 +112,7 @@ header {
 }
 
 .section-title h2 {
-  font-size: 50px;
+  font-size: 38px;
   font-weight: 800;
   text-align: center;
   color: #001c33;
@@ -147,7 +159,7 @@ header {
 
 .about-card h3 {
   color: #3a3d42;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   margin-top: 35px;
   margin-bottom: 15px;
@@ -155,7 +167,7 @@ header {
 
 .about-card p {
   color: #3a3d42;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
 }
@@ -188,7 +200,7 @@ header {
 
 .services-card h3 {
   color: #3a3d42;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 800;
   margin-top: 35px;
   margin-bottom: 20px;
@@ -231,7 +243,7 @@ header {
 
 .projects-card h3 {
   color: #3a3d42;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   margin-top: 35px;
   margin-bottom: 15px;
@@ -239,16 +251,17 @@ header {
 
 .projects-card p {
   color: #3a3d42;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 35px;
 }
 
 .btn-digi-blue {
+  border: none;
   background-color: #007cf5;
   text-decoration: none;
   color: white;
-  font-weight: 800;
+  font-weight: 700;
   padding: 15px 30px;
   font-size: 16px;
   border-radius: 14px;
@@ -300,7 +313,7 @@ footer {
 
 .footer-text h1 {
   color: white;
-  font-size: 58px;
+  font-size: 50px;
   font-weight: 800;
   margin-bottom: 30px;
   text-align: center;
@@ -329,4 +342,133 @@ footer {
 
 .footer-end p {
   color: white;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.modal-content {
+  padding: 30px;
+  border-radius: 50px !important;
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  -ms-border-radius: 50px !important;
+  -o-border-radius: 50px !important;
+}
+
+.modal-header, .modal-footer {
+  border: none !important;
+}
+
+.contact-input label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contact-input input {
+  padding: 10px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+@media screen and (max-width: 560px) {
+  header {
+    height: 100vh;
+  }
+
+  .navbar {
+    padding: 24px;
+  }
+
+  .navbar-toggler {
+    color: white;
+    background-color: white;
+  }
+
+  .btn-nav-white {
+    margin: 0 !important;
+    background-color: #007bf500;
+    color: white;
+    font-weight: 400;
+  }
+
+  .text-nav-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-digi-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+  .banner-text h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  .banner-text p{
+    font-size: 20px;
+    text-align: center;
+  }
+  .banner-img {
+    display: none;
+  }
+  .section-title {
+    padding: 0 24px;
+  }
+  .section-title p{
+    width: 100%;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .services-card {
+    flex-direction: column;
+  }
+  .services-card h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .services-card p {
+    margin-left: 0;
+    text-align: center;
+  }
+  .client-card {
+    margin-bottom: 25px;
+  }
+  .footer-content {
+    padding: 120px 24px 60px 24px;
+  }
+  .footer-text h1{
+    font-size: 40px;
+  }
+  .footer-end-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

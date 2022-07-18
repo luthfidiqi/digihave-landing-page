@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assets/images/white-icon.png" />
     <title>Digihave</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -30,13 +31,22 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse text-nav-mobile"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
             <a class="btn-digi-nav" href="#">Home</a>
             <a class="btn-digi-nav" href="#">About Us</a>
             <a class="btn-digi-nav" href="#">Services</a>
             <a class="btn-digi-nav" href="#">Projects</a>
-            <a class="btn-digi-white ms-3" href="#">Contact</a>
+            <a
+              class="btn-digi-white ms-3 btn-nav-white"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+              >Contact</a
+            >
           </div>
         </div>
       </nav>
@@ -48,7 +58,13 @@
             Over the years, our experience has helped our clients realize their
             great ideas in the digital world.
           </p>
-          <a href="" class="btn-digi-white">Let’s Talk</a>
+          <a
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+            class="btn-digi-white"
+            >Let’s Talk</a
+          >
         </div>
         <div class="banner-img">
           <img src="./assets/images/header-illu.png" alt="" />
@@ -146,7 +162,7 @@
           </p>
         </div>
         <div class="projects-content row">
-          <div class="col-4">
+          <div class="col-md-4 col-sm-12">
             <div class="projects-card">
               <div class="project-thumbnail">
                 <img src="./assets/images/project-lvleasy.png" alt="" />
@@ -159,7 +175,7 @@
               <a class="btn-digi-blue" href="#">Details</a>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4 col-sm-12">
             <div class="projects-card">
               <div class="project-thumbnail">
                 <img src="./assets/images/project-lvleasy.png" alt="" />
@@ -172,7 +188,7 @@
               <a class="btn-digi-blue" href="#">Details</a>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4 col-sm-12">
             <div class="projects-card">
               <div class="project-thumbnail">
                 <img src="./assets/images/project-lvleasy.png" alt="" />
@@ -194,22 +210,22 @@
             <p>We form excellent partnerships with our clients.</p>
           </div>
           <div class="client-content row">
-            <div class="col-3">
+            <div class="col-md-3 col-sm-12">
               <div class="client-card">
                 <img src="./assets/images/client-1.png" alt="" />
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-sm-12">
               <div class="client-card">
                 <img src="./assets/images/client-2.png" alt="" />
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-sm-12">
               <div class="client-card">
                 <img src="./assets/images/client-3.png" alt="" />
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 col-sm-12">
               <div class="client-card">
                 <img src="./assets/images/client-4.png" alt="" />
               </div>
@@ -223,24 +239,84 @@
               <h1>Interested in working with us?</h1>
               <p>Take easy steps by start discussion</p>
             </div>
-            <a href="" class="btn-digi-white">Let’s Talk</a>
+            <a
+              class="btn-digi-white"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+              >Let’s Talk</a
+            >
           </div>
           <div class="footer-end container">
             <div class="footer-end-line"></div>
-            <div class="d-flex justify-content-between">
+            <div class="footer-end-content d-flex justify-content-between">
               <p>© 2022 Digihave - All rights reserved.</p>
               <div class="social-media">
-                <a href=""
+                <a href="https://www.instagram.com/digihave"
                   ><img src="./assets/images/Instagram.png" alt=""
                 /></a>
-                <a class="me-3 ms-3" href=""
+                <a class="me-3 ms-3" href="https://www.instagram.com/digihave"
                   ><img src="./assets/images/Behance.png" alt=""
                 /></a>
-                <a href=""><img src="./assets/images/Linkedin.png" alt="" /></a>
+                <a href="https://www.instagram.com/digihave"
+                  ><img src="./assets/images/Linkedin.png" alt=""
+                /></a>
               </div>
             </div>
           </div>
         </footer>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Let’s Talk</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="contact-input">
+                <label for="">Name</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="contact-input">
+                <label for="">Email</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="contact-input">
+                <label for="">Subject</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="contact-input">
+                <label for="">Message</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn-digi-blue">Submit</button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script
